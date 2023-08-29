@@ -35,9 +35,15 @@
       outline: none;
       transition: border-color 0.2s ease;
     }
-
+#name.error{
+ border:2px solid red;
+}
+#email.error{
+     border:2px solid red;
+}
+#password.error{ border:2px solid red;}
     input.error {
-      border-color: red;
+      border:2px solid red;
     }
 
     input.success {
@@ -233,7 +239,7 @@
       if (Object.keys(userData).length === 3) {
         userDataArray.push(userData); // Push the current user's data into the array
         console.log(userDataArray); // Display the array 
-        console.log('User data stored in the array.');
+      //  console.log('User data stored in the array.');
       }
     }
 //error msg
@@ -289,7 +295,7 @@
         loginMessage.style.color = 'red';
       }
     }
-        
+
   </script>
 </body>
 
