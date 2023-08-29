@@ -129,7 +129,7 @@
        cursor: pointer;
        border: 1px solid #4caf50;
       color:white;
-      background-color: #4caf50;
+      background-color: #4caf51;
       transition: background-color 0.2s ease;
     }
 
@@ -145,9 +145,7 @@
       justify-content: center;
     }
 
-    .login-section {
-      display: none;
-    }
+   
   </style>
 </head>
 
@@ -177,19 +175,10 @@
       <label for="login-password">Login Password:</label>
       <input type="password" id="login-password" oninput="clearFieldStyles(event)">
       <p id="loginPasswordError" class="error-message"></p>
-
-
       <div id="loginMessage"></div>
-
       <button type="button" class="login" onclick="performLogin()">Login</button>
-
-
-
     </div>
-
-
   </form>
-
   <script>
     const userDataArray = []; // Array to store user data objects
 
@@ -305,6 +294,7 @@
       }
     }
 
+    
   </script>
 </body>
 
